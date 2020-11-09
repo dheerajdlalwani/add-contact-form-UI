@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <span class="homeButton">
+            <a href="home.html"><img src="home.svg" alt=""></a>
+        </span>
+        <span class="logo">
+            <img src="contactBook.svg" alt="">
+        </span>
+        <span class="title2">
+            New Contact
+        </span>
+            <form class="box" action="" method="post">
+                <label for="firstName">First Name</label>
+                <input class="inputBox" type="text" name="firstName" id="firstName" placeholder="Joe">
+                <br>
+                <label for="middleName">Middle Name</label>
+                <input class="inputBox" type="text" name="middleName" id="middleName" placeholder="Robinette">
+                <br>
+                <label for="lastName">Last Name</label>
+                <input class="inputBox" type="text" name="lastName" id="lastName" placeholder="Biden">
+                <br>
+                <label for="contact1">Contact Number 1</label>
+                <input class="inputBox" type="tel" name="contact1" id="contact1" placeholder="987654321">
+                <br>
+                <label for="contact2">Contact Number 2</label>
+                <input class="inputBox" type="tel" name="contact2" id="contact2" placeholder="987654321">
+                <br>
+                <label for="email">Email</label>
+                <input class="inputBox" type="email" name="email" id="email" placeholder="joemama@whitehouse.com">
+                <br>
+                <label for="address">Address</label>
+                <textarea class="inputBox" name="address" id="address" cols="60" rows="7" placeholder="1600, Pennsylvania Avenue NW, Washington D.C., 20500, U.S"></textarea>
+                <br>
+                <label for="group">Group</label>
+                <select class="inputBox" id="group" name="group">
+                    <option value="general">General</option>
+                    <option value="family">Family</option>
+                    <option value="friends">Friends</option>
+                    <option value="work">Work</option>
+                </select>
+                <br>
+                <input class="save" type="submit" value="Save">
+            </form>
+    </div>
+</body>
+</html>

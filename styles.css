@@ -5,6 +5,8 @@
 {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    /* border: solid red 1px; */
 }
 
 body
@@ -17,34 +19,57 @@ body
     justify-items: center;
 }
 
-.home
+.container
 {
     grid-column:2/3;
     display: grid;
     align-items: center;
     justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .logo
 {
     grid-row: 1/2;
+    grid-column: 2/3;
     padding: 15px;
     margin: 15px;
     color: #1da1f2;
 }
 
+.homeButton
+{
+    justify-self: left;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
 .title
 {
     grid-row: 2/3;
+    grid-column: 2/3;
     font-size: 3rem;
     font-weight: 700;
-    color: #1da1f2;
+    color: white;
     margin-bottom: 15px;
 }
+
+.title2
+{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+}
+
+
 
 .menu   
 {
     grid-row: 3/4;
+    grid-column: 2/3;
     display: grid;
     width: 100%;
     align-items: center;
@@ -109,4 +134,79 @@ body
 .searchBox:focus::placeholder
 {
     color: #1da1f2;
+}
+
+
+a
+{
+    text-decoration: none;
+    text-align: center;
+}
+
+.container
+{
+    grid-column: 2/3;
+}
+
+.box
+{
+    display: grid;
+    align-items: center;
+    grid-column: 1/4;
+    /* justify-items: center; */
+}
+
+.inputBox
+{
+    padding: 15px;
+    background-color: #192734;
+    border: 0;
+    border-bottom:  solid #8899a6 2px;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.inputBox:focus
+{
+    padding: 15px;
+    background-color: #192734;
+    border: 0;
+    border-bottom:  solid #1da1f2 2px;
+}
+
+.inputBox::placeholder
+{
+    text-align: center;
+}
+
+
+.inputBox:focus::placeholder
+{
+    color: #1da1f2;
+}
+
+label
+{
+    font-size: 1.5rem;
+    color: #1da1f2;
+}
+
+.save
+{
+    background-color: #1da1f2;
+    border: 0;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.save:hover
+{
+    background-color: #1a91da;
 }
