@@ -3,5 +3,8 @@ HTML-CSS-JS version of add-contact-form
 ## Home page
 ![](home.png)
 
-## New Contact Form
+## New contact form
 ![](newContact.png)
+
+## Contact list page
+![](contactList.png)
